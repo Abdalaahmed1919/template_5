@@ -1,0 +1,213 @@
+:root {
+    --main-color : #FD6F00;
+    --white-color: #FEFEFE;
+    --gray-color : #707070;
+    --dark-gray : #575757;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+}
+/* Start Nav */
+.navbar {
+    height: 100px;
+}
+.navbar .navbar-brand {
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+    font-weight: bold;
+    background-image: linear-gradient(to right, #FA6E00, #E60026);
+}
+.navbar .nav-link {
+    color: var(--gray-color) ;
+    font-weight: bold;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+.navbar .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar .nav-link.active {
+  color: var(--main-color);
+}
+.heremee {
+    color: white; 
+    background-image: linear-gradient(to right, #FA6E00, #FD6F00 , #E46400);
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.navbar .navbar-toggler  {
+    background-color: var(--main-color);
+}
+/* End Nav */
+/* Start Home */
+.home .row .text p:nth-child(1) {
+     color: var(--gray-color);
+     font-size: 24px;
+}
+.home .row .text p:nth-child(2) {
+    color: #959595;
+    font-size: 28px;
+    font-weight: bold;
+}
+.home .row .text h1 {
+    font-size: 70px;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+    font-weight: bold;
+    background-image: linear-gradient(to right, #987100 , #FD6F00 , #CA5900);
+}
+.home .numbres {
+    display: flex;
+    justify-content: center;
+    background-color: #1c1b1b;
+    width: fit-content;
+    padding: 25px 25px 15px;
+    gap: 60px;
+    border-radius: 7px;
+}
+.home .numbres .number {
+    position: relative;
+}
+.home .numbres .number p:nth-child(1) {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.home .numbres .number p:nth-child(2) {
+    color: #DFDFDF;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home .numbres .number:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    height: 90%;
+    width: 1px;
+    background-color: white;
+    right: -30px;
+    top: 0px;
+}
+.home img{
+    width: 400px;
+}
+.homeimagediv::before {
+    position: absolute;
+    content: "";
+}
+@media (max-width: 475px) {
+    .home .numbres  {
+        flex-direction: column;
+    }
+    .home .numbres .number:not(:last-child)::after {
+        display: none;
+    }
+}
+/* End Home */
+/* Start services */
+.services h2 {
+    font-size: 40px;
+}
+.services .row .card {
+    background-color: #1c1b1b;
+}
+.services .row .card  i {
+    color: var(--main-color);
+    font-size: 50px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.services .row .card  .card-title {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+.services .row .card  .card-text {
+    color: var(--dark-gray);
+    padding: 20px;
+}
+/* End services */
+/* Start About */
+.about h2 {
+    font-size: 40px;
+}
+.about p {
+    letter-spacing: 2px;
+    color: #959595;
+}
+/* End About */
+/* Start Skills */
+.skills h2 {
+    font-size: 40px;
+}
+.skills p {
+    color: #959595;
+    font-size: 24px;
+    font-weight: bold;
+}
+.skills img {
+    outline: 6px solid var(--main-color);
+    padding: 20px;
+    border-radius: 30%;
+}
+/* End Skills */
+/* Start Portfolio */
+.portfolio h2 {
+    font-size: 40px;
+}
+.portfolio .card {
+    background-color : transparent;
+}
+.portfolio .card-body {
+    background-color: #252525;
+    color: #C6C6C6;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+}
+.portfolio a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 13px;
+    transition: 0.3s;
+}
+.portfolio a:hover {
+    color: #C6C6C6;
+}
+/* End Portfolio */
+/* Start Contact */
+.contact h2 {
+    font-size: 40px;
+}
+.contact p {
+    color: var(--main-color);
+}
+.contact p span {
+    color: var(--white-color);
+}
+.contact .social p {
+    color: white;
+}
+.contact .social i {
+    color: var(--main-color);
+    transition: 0.3s;
+    font-size: 25px;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+.contact .social i:hover {
+    color: var(--white-color);
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+    background-color: #1b1b1b;
+}
+.footer p {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+/* End Footer */
